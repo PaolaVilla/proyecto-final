@@ -23,6 +23,13 @@ public class FrmMesa extends javax.swing.JFrame {
         initComponents();
         lblNombre.setText("Mesero: "+Roles.idEmpleado); 
     }
+    
+    void cargarMesa(int ban) {
+        this.ban=ban;
+        FrmPlato FrmOrden = new FrmPlato();
+        FrmOrden.setVisible(true);
+    }
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -249,27 +256,47 @@ public class FrmMesa extends javax.swing.JFrame {
 
         btnMesa16.setBorder(null);
         btnMesa16.setContentAreaFilled(false);
-        btnMesa16.setOpaque(false);
+        btnMesa16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMesa16ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnMesa16, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 250, 90, 50));
 
         btnMesa17.setBorder(null);
         btnMesa17.setContentAreaFilled(false);
-        btnMesa17.setOpaque(false);
-        getContentPane().add(btnMesa17, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 350, -1, -1));
+        btnMesa17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMesa17ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnMesa17, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 331, 90, 60));
 
         btnMesa18.setBorder(null);
         btnMesa18.setContentAreaFilled(false);
-        btnMesa18.setOpaque(false);
-        getContentPane().add(btnMesa18, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 440, 70, 30));
+        btnMesa18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMesa18ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnMesa18, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 420, 90, 60));
 
         btnMesa19.setBorder(null);
         btnMesa19.setContentAreaFilled(false);
-        btnMesa19.setOpaque(false);
+        btnMesa19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMesa19ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnMesa19, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 500, 90, 60));
 
         btnMesa20.setBorder(null);
         btnMesa20.setContentAreaFilled(false);
-        btnMesa20.setOpaque(false);
+        btnMesa20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMesa20ActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnMesa20, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 580, 90, 50));
 
         lblNombre.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
@@ -302,83 +329,82 @@ public class FrmMesa extends javax.swing.JFrame {
         this.setExtendedState(ICONIFIED);
     }//GEN-LAST:event_btnMinimizarActionPerformed
     private void btnMesa1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMesa1ActionPerformed
-        this.ban=1;
-        FrmPlato FrmOrden = new FrmPlato();
-        FrmOrden.setVisible(true);
+        cargarMesa(1);
     }//GEN-LAST:event_btnMesa1ActionPerformed
     private void btnMesa2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMesa2ActionPerformed
-        this.ban=2;
-        FrmPlato FrmOrden = new FrmPlato();
-        FrmOrden.setVisible(true);
+        cargarMesa(2);
     }//GEN-LAST:event_btnMesa2ActionPerformed
     private void btnMesa3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMesa3ActionPerformed
-        this.ban=3;
-        FrmPlato FrmOrden = new FrmPlato();
-        FrmOrden.setVisible(true);
+        cargarMesa(3);
     }//GEN-LAST:event_btnMesa3ActionPerformed
     private void btnMesa4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMesa4ActionPerformed
-        this.ban=4;
-        FrmPlato FrmOrden = new FrmPlato();
-        FrmOrden.setVisible(true);
+        cargarMesa(4);
     }//GEN-LAST:event_btnMesa4ActionPerformed
     private void btnMesa5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMesa5ActionPerformed
-        this.ban=5;
-        FrmPlato FrmOrden = new FrmPlato();
-        FrmOrden.setVisible(true);
+        cargarMesa(5);
     }//GEN-LAST:event_btnMesa5ActionPerformed
     private void btnMesa6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMesa6ActionPerformed
-        this.ban=6;
-        FrmPlato FrmOrden = new FrmPlato();
-        FrmOrden.setVisible(true);
+        cargarMesa(6);
     }//GEN-LAST:event_btnMesa6ActionPerformed
     private void btnMesa7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMesa7ActionPerformed
-        this.ban=7;
-        FrmPlato FrmOrden = new FrmPlato();
-        FrmOrden.setVisible(true);
+        cargarMesa(7);
     }//GEN-LAST:event_btnMesa7ActionPerformed
     private void btnMesa8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMesa8ActionPerformed
-        this.ban=8;
-        FrmPlato FrmOrden = new FrmPlato();
-        FrmOrden.setVisible(true);
+        cargarMesa(8);
     }//GEN-LAST:event_btnMesa8ActionPerformed
     private void btnMesa9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMesa9ActionPerformed
-        this.ban=9;
-        FrmPlato FrmOrden = new FrmPlato();
-        FrmOrden.setVisible(true);
+        cargarMesa(9);
     }//GEN-LAST:event_btnMesa9ActionPerformed
     private void btnMesa10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMesa10ActionPerformed
-        this.ban=10;
-        FrmPlato FrmOrden = new FrmPlato();
-        FrmOrden.setVisible(true);
+        cargarMesa(10);
     }//GEN-LAST:event_btnMesa10ActionPerformed
     private void btnMesa11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMesa11ActionPerformed
-        this.ban=11;
-        FrmPlato FrmOrden = new FrmPlato();
-        FrmOrden.setVisible(true);
+        cargarMesa(11);
     }//GEN-LAST:event_btnMesa11ActionPerformed
     private void btnMesa12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMesa12ActionPerformed
-        this.ban=12;
-        FrmPlato FrmOrden = new FrmPlato();
-        FrmOrden.setVisible(true);
+        cargarMesa(12);
     }//GEN-LAST:event_btnMesa12ActionPerformed
     private void btnMesa13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMesa13ActionPerformed
-        this.ban=13;
-        FrmPlato FrmOrden = new FrmPlato();
-        FrmOrden.setVisible(true);
+        cargarMesa(13);
     }//GEN-LAST:event_btnMesa13ActionPerformed
     private void btnMesa14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMesa14ActionPerformed
-        this.ban=14;
-        FrmPlato FrmOrden = new FrmPlato();
-        FrmOrden.setVisible(true);
+        cargarMesa(14);
     }//GEN-LAST:event_btnMesa14ActionPerformed
 
     private void btnMesa15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMesa15ActionPerformed
         // TODO add your handling code here:
+        cargarMesa(15);
     }//GEN-LAST:event_btnMesa15ActionPerformed
 
+    
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
         System.exit(0);
     }//GEN-LAST:event_btnSalirActionPerformed
+
+    private void btnMesa20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMesa20ActionPerformed
+        // TODO add your handling code here:
+        cargarMesa(20);
+    }//GEN-LAST:event_btnMesa20ActionPerformed
+
+    private void btnMesa16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMesa16ActionPerformed
+        // TODO add your handling code here:
+        cargarMesa(16);
+    }//GEN-LAST:event_btnMesa16ActionPerformed
+
+    private void btnMesa17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMesa17ActionPerformed
+        // TODO add your handling code here:
+        cargarMesa(17);
+    }//GEN-LAST:event_btnMesa17ActionPerformed
+
+    private void btnMesa18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMesa18ActionPerformed
+        // TODO add your handling code here:
+        cargarMesa(18);
+    }//GEN-LAST:event_btnMesa18ActionPerformed
+
+    private void btnMesa19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMesa19ActionPerformed
+        // TODO add your handling code here:
+        cargarMesa(19);
+    }//GEN-LAST:event_btnMesa19ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel FondoComanda;
